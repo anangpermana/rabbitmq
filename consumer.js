@@ -1,6 +1,6 @@
 const amqp = require('amqplib')
 
-amqp.connect('amqps://sacsavcg:hfav5Krnkxu9_1JMyWPdIni2o1uxn0Hx@mustang.rmq.cloudamqp.com/sacsavcg').then(conn => {
+amqp.connect('amqps://qufajbbc:lnOB6BblSDZUiuKM5ZZ9FsNtLKlqEQoR@stingray.rmq.cloudamqp.com/qufajbbc').then(conn => {
 	return conn.createChannel().then(ch => {
 		const ok = ch.assertQueue('hello', {durable: false})
 		ok.then(() => {
